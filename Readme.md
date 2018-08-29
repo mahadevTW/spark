@@ -6,6 +6,10 @@
 
 ```docker run -v `{pwd}`/input:/input -p 4040:4040 -it spark```
 
+* Run Spark and Hbase docker-compose : 
+
+```docker-compose up -d```
+
 * Run Wordcount program :
 
 Run following code on scala console of docker container
@@ -19,3 +23,6 @@ counts.saveAsTextFile("/input/result")
  * Access Spark Web UI
 
  [http://localhost:4040](http://localhost:4040)
+
+ [Hbase docker readme](https://github.com/dajobe/hbase-docker)
+ 
